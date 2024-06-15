@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(246, 246, 246);
+}
+
+
+header{
+    grid-area: header;
+    background-color: rgb(0, 117, 171);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+menu{
+    grid-area: menu;
+    background-color: rgb(239, 239, 239);
+    margin: 0%;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.menuprincipal{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.título{
+    display: flex;
+    font-weight:500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(0,117,171);
+}
+
+.boxsmall{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 7px;
+    font-size: 17px;
+    color: rgb(64, 64, 64);
+    align-items: center;
+}
+
+.stock{
+    color: rgb(158, 158, 158);
+    font-size: 15px;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(246, 246, 246);
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.caja-producto{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);
+    width: auto;
+    height: auto;
+    row-gap: 15px;
+}
+
+.producto-img{
+    display: flex;
+    justify-content: center;
+}
+
+.producto-img img{
+    width: 350px;
+}
+
+.prod-título{
+    display: flex;
+    font-weight: 700;
+    font-size: 22;
+    justify-content: center;
+    color: rgb(64, 64, 64);
+}
+
+.precio{
+    display: flex;
+    font-size: 18px;
+    color: rgb(0,117,171);
+    justify-content: center;
+}
+
+.btn-comprar button{
+    display: flex;
+    background-color: rgb(0,117,171);
+    color: white;
+    width: 100%;
+    justify-content: center;
+    border-width: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px auto 40px;
+}
+
+.grid-product{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: auto;
+    gap:15px;
+}
+
+footer{
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(0,117,171);
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+}
